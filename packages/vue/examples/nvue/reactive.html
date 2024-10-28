@@ -18,12 +18,12 @@
 <script>
   // 从 Vue 中解构出 reactive effect 方法
   const { reactive, effect } = Vue
-  console.log(reactive)
   // 声明响应式数据 obj
   const obj = reactive({
     name: '孙悟空',
     age: 500,
   })
+  console.log(obj)
   // 调用 effect 方法
   effect(() => {
     document.querySelector('#app').innerText = obj.name
